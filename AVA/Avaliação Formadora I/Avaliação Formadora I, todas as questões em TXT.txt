@@ -1,0 +1,32 @@
+Questão 1:
+Nome do algoritmo: Conversor Fahrenheit
+
+celcius = float(input("Por favor, informe a temperatura em Celcius que deseja converter: "))
+fahrenheit = ((9*celcius)/5)+32
+print(f"O valor de {celcius}ºC em Fahrenheit é: {fahrenheit}ºF.")
+
+Questão 2:
+Nome do algoritmo: Calculo Salarial
+
+salario = float(input("Para calcular o seu novo salário, informe o salário atual: "))
+if(salario<=500):
+    salario = salario + (salario*0.05)
+    print(f"Seu salário terá um aumento de 5%, totalizando em um novo ganho de R$ {salario:.2f}.")
+elif((salario>500) and (salario<=1200)):
+    salario = salario + (salario*0.12)
+    print(f"Seu salário terá um aumento de 12%, totalizando em um novo ganho de R$ {salario:.2f}.")
+elif(salario>1200):
+    print(f"Seu salário permanecerá R$ {salario:.2f}.")
+
+Questão 3:
+Nome do algoritmo: Bonificação por Idade
+
+nome = str(input("Informe o nome da pessoa contratada: "))
+idade = int(input(f"Informe a idade de {nome}: "))
+salario_original = float(input(f"Informe o ganho salarial de {nome}: "))
+
+if((salario_original>=1600) and (idade>=18)):
+    salario = salario_original+1000
+    print(f"O novo ganho salarial de {nome} será de R$ {salario:.2f}.\nOcorreu um acréscimo de R$ 1000,00 ao ganho salarial original de R$ {salario_original:.2f}.")
+else:
+    print(f"O ganho salarial de {nome} permanecerá como R$ {salario_original:.2f}, pois não atende os requisitos para uma bonificação.")
