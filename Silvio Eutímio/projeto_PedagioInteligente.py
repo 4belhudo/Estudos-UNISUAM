@@ -1,3 +1,5 @@
+
+
 print("Siga a tabela abaixo para organização e melhor fluxo de trabalho.\n"
 "\n| ID | Tipo de Veículo  |"
 "\n| 01 | Carro de passeio |"
